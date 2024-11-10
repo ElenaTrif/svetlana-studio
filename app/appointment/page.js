@@ -10,7 +10,7 @@ const AppointmentPage = () => {
     const [phone, setPhone] = useState(''); 
     const [date, setDate] = useState('');
 
-    const googleAppsScriptUrl = "https://script.google.com/macros/s/AKfycbx4nfClhbtBE29v6mfCSgQqNwMjxwWMUbzFcBtD4UezHRf24qHwS6frSYwWvj8l-A2C6g/exec";
+    const googleAppsScriptUrl = "https://script.google.com/macros/s/AKfycbyIqtUCWvQO4lbDCv2cCvl7XdH4oXldfVdSbwxs2PN_fJgbxwyJkXauhY_0_X0hNbzlIw/exec";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -23,14 +23,26 @@ const AppointmentPage = () => {
         });
     
         try {
-            const response = await fetch(`${googleAppsScriptUrl}?${params.toString()}`, {
-                method: "GET",
+            // Utilisez POST au lieu de GET
+            const response = await fetch(googleAppsScriptUrl, {
+                method: "POST", // Changez de GET à POST
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded", // Format approprié pour POST
+                },
+                body: params.toString(),
             });
     
-            if (response.ok) {
+            if (!response.ok) {
+                throw new Error("Erreur dans la réponse du serveur.");
+            }
+
+            const responseData = await response.json();
+
+            // Vérifiez que la réponse contient bien un succès
+            if (responseData.success) {
                 alert(`Merci ${name}, votre rendez-vous est enregistré pour le ${date}!`);
             } else {
-                alert("Erreur lors de l'enregistrement du rendez-vous.");
+                alert(`Erreur: ${responseData.error || 'Détails inconnus.'}`);
             }
         } catch (error) {
             console.error("Erreur lors de l'enregistrement du rendez-vous :", error);
