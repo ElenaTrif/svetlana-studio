@@ -10,7 +10,7 @@ const AppointmentPage = () => {
     const [phone, setPhone] = useState(''); 
     const [date, setDate] = useState('');
 
-    const googleAppsScriptUrl = "https://script.google.com/macros/s/AKfycbzO80g_N0u5ZgH_dGwfPU1mmrgkc9oQMTCw3q1Pg8jMPS761TMgPMiHy_iWGidVMmuBFQ/exec";
+    const googleAppsScriptUrl = "https://script.google.com/macros/s/AKfycbx8j3p7X2VzziTCvlOdDMx0qXBy-mquBi12HAKkf4ThONMNAO8Vsdype8ETyRY_GLiQ3A/exec";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
