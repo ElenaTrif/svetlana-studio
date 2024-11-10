@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -7,87 +9,53 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
+          src="/logo.png"
+          alt="Svetlana Studio Logo"
           width={180}
-          height={38}
+          height={180}
           priority
         />
+        <h1 className={styles.title}>Bienvenue chez Svetlana Studio</h1>
+        <p className={styles.texte}>Spécialiste en extension des cils et architecture des sourcils</p>
         <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
+          <li>Prendre rendez-vous pour des services de qualité</li>
+          <li>Résultats impeccables et naturels</li>
         </ol>
 
         <div className={styles.ctas}>
+          {/* Lien vers la page de rendez-vous */}
           <a
             className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/appointment"  // Lien vers la page appointment
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Prendre rendez-vous
           </a>
+
+          {/* Lien vers les services */}
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="#services"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.secondary}
           >
-            Read our docs
+            Nos services
           </a>
         </div>
       </main>
       <footer className={styles.footer}>
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://www.instagram.com/svetlanastudio"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="/file.svg"
-            alt="File icon"
+            src="/instagram.svg"
+            alt="Instagram"
             width={16}
             height={16}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+          Suivez-nous sur Instagram
         </a>
       </footer>
     </div>

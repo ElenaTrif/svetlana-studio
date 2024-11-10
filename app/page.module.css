@@ -6,14 +6,17 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
-  font-family: var(--font-geist-sans);
+
+  --background: #f0e6f6; /* Exemple de couleur douce */
+  --foreground: #2c2c2c; /* Texte foncé */
+  font-family: "Poppins", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,7 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  grid-row-start: 2;
+  align-items: center;
 }
 
 .main ol {
@@ -56,22 +59,47 @@
   font-weight: 600;
 }
 
+.logo {
+  border-radius: 100px;
+}
+
+.title {
+  text-align: center; /* Centrer le texte */
+  font-size: 2.5rem; /* Taille du texte */
+  font-weight: bold;
+  margin-top: 0;
+  color: #f07da5; /* Couleur du texte */
+}
+
+.texte {
+  text-align: center; /* Centrer le texte */
+  font-size: 1.1rem; /* Taille du texte */
+  font-weight: bold;
+  margin-top: 0;
+}
+/* Adaptation pour petits écrans */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem; /* Réduit la taille sur les petits écrans */
+  }
+}
+
 .ctas {
   display: flex;
   gap: 16px;
+  align-items: center;
+  flex-wrap: wrap; /* Permet aux boutons de s'empiler sur les petits écrans */
+  justify-content: center;
 }
 
 .ctas a {
   appearance: none;
-  border-radius: 128px;
+  border-radius: 25px;
   height: 48px;
   padding: 0 20px;
-  border: none;
+
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -79,19 +107,31 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
+  min-width: 160px; /* Largeur minimum pour les boutons */
+  text-align: center;
 }
 
 a.primary {
   background: var(--foreground);
   color: var(--background);
   gap: 8px;
+  min-width: 180px;
 }
 
 a.secondary {
   border-color: var(--gray-alpha-200);
   min-width: 180px;
+  gap: 8px;
+}
+.ctas a.primary {
+  background-color: #f07d8f; /* Exemple de couleur rose doux */
+  color: white;
 }
 
+.ctas a.secondary {
+  border-color: var(--foreground);
+  color: var(--foreground);
+}
 .footer {
   grid-row-start: 3;
   display: flex;
@@ -148,6 +188,7 @@ a.secondary {
     font-size: 14px;
     height: 40px;
     padding: 0 16px;
+    min-width: auto;
   }
 
   a.secondary {
