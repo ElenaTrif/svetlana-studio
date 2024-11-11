@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.socialLinks}>
         <Link
-          href="https://www.instagram.com/svetlanastudio"
+          href="https://www.instagram.com/svetlana_studio40/?igsh=MTkwNzZqb3lzb283dg%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.socialLink}
@@ -23,7 +23,7 @@ const Footer = () => {
         </Link>
 
         <Link
-          href="https://www.facebook.com/svetlanastudio"
+          href="https://www.facebook.com/profile.php?id=100074753333531"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.socialLink}

@@ -65,3 +65,15 @@
     background-color: #f07d8f;
   }
   
+  .successMessage {
+    color: #28a745;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .errorMessage {
+    color: #dc3545;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
