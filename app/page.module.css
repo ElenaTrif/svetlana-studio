@@ -49,3 +49,44 @@
 .ctas .primary:hover {
   background-color: #e06a76;
 }
+
+.welcomeSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 1rem; /* Espace entre les éléments */
+  text-align: center;
+}
+
+.welcomeContent {
+  flex: 1;
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 250px; /* Ajustez cette largeur en fonction de la taille souhaitée pour les images */
+  height: 250px;
+  object-fit: cover; /* Pour que l'image soit coupée si elle est trop grande tout en gardant son aspect */
+  border-radius: 8px; /* Optionnel : ajoute des coins arrondis aux images */
+  transition: all 0.3s ease; /* Pour un effet lors du redimensionnement */
+}
+
+/* Styles spécifiques pour les petits écrans */
+@media (max-width: 768px) {
+  .welcomeSection {
+    flex-direction: column; /* Les éléments s'empilent verticalement */
+  }
+
+  .welcomeImage:first-child {
+    order: -1; /* Place l'image de gauche au-dessus du texte */
+    width: 80%; /* Prend 80% de la largeur de l'écran */
+    max-width: 300px; /* Limite la largeur maximale pour ne pas trop agrandir */
+  }
+
+  .welcomeImage:last-child {
+    display: none; /* Cache l'image de droite */
+  }
+}
+
+

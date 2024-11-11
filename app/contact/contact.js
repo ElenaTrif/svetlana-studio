@@ -47,7 +47,7 @@ const Contact = () => {
 
       <div className={styles.contactForm}>
         <form
-          action="https://formsubmit.co/novicovalena@yahoo.fr"
+          action="https://formsubmit.co/e0bb9f312c112d43313e4ceab28fb7e7"
           method="POST"
           onSubmit={handleSubmit}
         >
