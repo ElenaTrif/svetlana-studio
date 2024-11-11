@@ -21,6 +21,7 @@ const Header = () => {
         <nav className={styles.navLinks}>
           <Link href="/#services">Services</Link>
           <Link href="/#photos">Photos</Link>
+          <Link href="/#tarifs">Tarifs</Link>
           <Link href="/#appointment">Rendez-vous</Link>
           <Link href="/#contact">Contact</Link>
         </nav>

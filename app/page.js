@@ -46,7 +46,7 @@ export default function Home() {
         <Services />
 
        {/* Section Tarifs */}
-       <section className={styles.tarifsSection}>
+       <section className={styles.tarifsSection} id="tarifs">
           <h2 className={styles.tarifsTitle}>Nos Tarifs</h2>
           <div className={styles.tarifsText}>
             <p><span className={styles.bullet}>•</span> À partir de 35€ pour une séance complète d'extension de cils.</p>
