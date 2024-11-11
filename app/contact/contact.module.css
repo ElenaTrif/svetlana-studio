@@ -1,79 +1,111 @@
+/* Section de contact */
 .contactSection {
-    padding: 4rem 2rem;
-    background-color: #f0e6f6;
-    text-align: center;
-  }
-  
-  .contactTitle {
-    font-size: 2rem;
-    color: #f07da5;
-    margin-bottom: 1rem;
-  }
-  
-  .contactText {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 2rem;
-  }
-  
-  .contactForm {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .inputGroup {
-    margin-bottom: 1.5rem;
-    text-align: left;
-  }
-  
-  .inputGroup label {
-    font-size: 1rem;
-    color: #555;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .inputGroup input,
-  .inputGroup textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  .inputGroup textarea {
-    resize: vertical;
-  }
-  
-  .submitButton {
-    background-color: #f07da5;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submitButton:hover {
-    background-color: #f07d8f;
-  }
-  
-  .successMessage {
-    color: #28a745;
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .errorMessage {
-    color: #dc3545;
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #f0e6f6;
+  text-align: center;
+  visibility: hidden; /* Masque la section au départ */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; /* Transition fluide */
+}
+
+/* Section visible après l'animation */
+.contactSection.showForm {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s; /* Transition fluide */
+}
+
+/* Titre de la section de contact */
+.contactTitle {
+  font-size: 2rem;
+  color: #f07da5;
+  margin-bottom: 1rem;
+}
+
+/* Texte sous le titre de la section de contact */
+.contactText {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Formulaire de contact */
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  visibility: hidden; /* Masque le formulaire au départ */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Transition fluide */
+}
+
+/* Formulaire visible après l'animation */
+.contactSection.showForm .contactForm {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Transition fluide */
+}
+
+/* Groupes d'input (nom, email, message) */
+.inputGroup {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Labels des inputs */
+.inputGroup label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs et textarea */
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; /* S'assure que le padding n'augmente pas la taille des éléments */
+}
+
+/* Ajustement de la taille du textarea */
+.inputGroup textarea {
+  resize: vertical;
+}
+
+/* Bouton de soumission */
+.submitButton {
+  background-color: #f07da5;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.submitButton:hover {
+  background-color: #f07d8f;
+}
+
+/* Message de succès */
+.successMessage {
+  color: #28a745;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Message d'erreur */
+.errorMessage {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
