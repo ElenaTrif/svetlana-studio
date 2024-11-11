@@ -77,7 +77,8 @@
 /* Styles spécifiques pour les petits écrans */
 @media (max-width: 768px) {
   .welcomeSection {
-    flex-direction: column; /* Les éléments s'empilent verticalement */
+    flex-direction: column-reverse; /* Les éléments s'empilent verticalement */
+    margin-top: -50px;
   }
 
   .welcomeImage:first-child {

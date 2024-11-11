@@ -67,6 +67,10 @@
       gap: 16px;
       justify-content: center;
     }
+
+    .navLinks a {
+      font-size: 12px;
+    }
   
     .socialLinks {
       justify-content: center;
