@@ -44,8 +44,6 @@ export default function Home() {
         </section>
         
         <Services />
-        <Photos />
-        
         <div className={styles.ctas} id="appointment">
           <a
             href="https://booking.setmore.com/scheduleappointment/735eb74d-0c35-4462-8d0e-e8ccec04489b"
@@ -56,6 +54,7 @@ export default function Home() {
             Prendre rendez-vous
           </a>
         </div>
+        <Photos />
         
         <Contact />
       </main>
