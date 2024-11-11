@@ -125,4 +125,51 @@
   }
 }
 
+/* Section Tarifs */
+.tarifsSection {
+  background-color: #f5f3f3; /* Fond légèrement coloré */
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.tarifsTitle {
+  font-size: 2rem;
+  color: #f07da5; /* Couleur principale de ton site */
+  margin-bottom: 1rem;
+}
+
+.tarifsText {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 1.5rem; /* Espace pour les puces */
+  text-align: left;
+}
+
+.tarifsText p {
+  margin-bottom: 0.8rem; /* Espacement entre les lignes */
+}
+
+.bullet {
+  color: #f07da5; /* Couleur des puces */
+  font-size: 1.5rem; /* Taille des puces */
+  margin-right: 1rem; /* Espacement entre la puce et le texte */
+  font-weight: bold; /* Style des puces */
+}
+
+@media (max-width: 768px) {
+  .tarifsSection {
+    padding: 1.5rem; /* Réduit le padding pour les petits écrans */
+  }
+
+  .tarifsTitle {
+    font-size: 1.8rem;
+  }
+
+  .tarifsText {
+    font-size: 1rem;
+  }
+}
