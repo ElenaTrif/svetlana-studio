@@ -28,7 +28,8 @@
   
   .photo {
     width: 100%;
-    height: auto;
+    height: 200px; /* Vous pouvez ajuster la hauteur selon vos préférences */
+  object-fit: cover;
     display: block;
   }
   

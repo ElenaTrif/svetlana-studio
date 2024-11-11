@@ -1,53 +1,62 @@
 .footer {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #f7e6ea;
-  color: var(--foreground);
-  text-align: center;
-}
-
-.footerContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footerLinks {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footer .socialLinks {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f7e6ea;
+    color: var(--foreground);
+    text-align: center;
+  }
+  
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footerLinks {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .footer .socialLinks {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
   }
-
+  
   .footer .socialLinks a {
     color: var(--foreground);
     font-size: 18px;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espace entre l'icône et le texte */
   }
-
-  /* Ajout d'une couleur de survol */
-.footer .socialLinks a:hover {
-    color: #f07d8f; /* Couleur de survol similaire au bouton */
+  
+  .footer .socialLinks a:hover {
+    color: #f07d8f;
   }
-
+  
+  .footer .socialLinks img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
   .footer .copyright {
     margin-top: 20px;
     font-size: 14px;
   }
-
+  
   /* Responsive Design pour petits écrans */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .footer .socialLinks {
       flex-direction: column;
       gap: 10px;
     }
   }
+  
