@@ -1,0 +1,47 @@
+.services {
+    padding: 2rem;
+    text-align: center;
+    background-color: #faf8fb;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: #f07da5;
+    margin-bottom: 1rem;
+  }
+  
+  .serviceList {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .serviceCard {
+    width: 250px;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .serviceIcon {
+    width: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .serviceTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .serviceDescription {
+    color: #666;
+  }
+  

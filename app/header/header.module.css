@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    padding: 16px 0;
+    background-color: #f7e6ea; /* Couleur douce qui s'harmonise avec le rose de vos boutons */
+    color: var(--foreground);
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Style du logo */
+  .logo {
+    max-width: 150px;
+    border-radius: 50px;
+  }
+  
+  /* Style du menu */
+  .navLinks {
+    display: flex;
+    gap: 24px; /* Espacement entre les éléments du menu */
+  }
+  
+  .navLinks a {
+    color: var(--foreground);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  /* Ajout d'une couleur de survol */
+  .navLinks a:hover {
+    color: #f07d8f; /* Couleur de survol similaire au bouton */
+  }
+  
+  /* Responsive Design pour petits écrans */
+  @media (max-width: 768px) {
+    .headerContent {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navLinks {
+      gap: 16px; /* Réduit l'espacement sur petits écrans */
+      justify-content: center;
+    }
+  }
+  

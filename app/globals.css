@@ -1,6 +1,7 @@
+/* Définition des couleurs par défaut */
 :root {
   --background: #f5f3f3;
-  --foreground: #333333;
+  --foreground: #333;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,33 +11,40 @@
   }
 }
 
+/* Style global pour HTML et body */
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
+/* Styles pour le body */
 body {
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Définition des marges et paddings pour tous les éléments */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Styles pour les liens */
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
 }
 
+/* Mode sombre */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+

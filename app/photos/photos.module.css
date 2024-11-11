@@ -1,0 +1,34 @@
+.photos {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f0e6f6;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: #f07da5;
+    margin-bottom: 1rem;
+  }
+  
+  .photoGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .photoItem {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .photoItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .photo {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
