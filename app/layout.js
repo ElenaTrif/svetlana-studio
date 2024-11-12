@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Svetlana Studio",
+  title: "Svetlana Studio Ychoux Biscarosse Parentis Arcachon Bordeaux",
   description: "Extension des cils et architecture des sourcils",
 };
 
