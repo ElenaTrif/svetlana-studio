@@ -146,8 +146,9 @@
   font-size: 1.2rem;
   color: #333;
   line-height: 1.6;
-  padding-left: 1.5rem; /* Espace pour les puces */
+  padding-left: 0.1rem; 
   text-align: left;
+  list-style: none; /* Supprime les puces par défaut */
 }
 
 .tarifsText p {

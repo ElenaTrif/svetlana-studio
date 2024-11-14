@@ -26,11 +26,11 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <section className={styles.welcomeSection}>
-          <img 
-            src="/left-image.png" 
-            alt="Les yeux avec des cils après l'extenstion" 
-            className={styles.welcomeImage} 
-            loading="lazy" 
+          <img
+            src="/left-image.png"
+            alt="Les yeux avec des cils après l'extenstion"
+            className={styles.welcomeImage}
+            loading="lazy"
           />
           <div className={styles.welcomeContent}>
             <h1 className={styles.title}>Bienvenue chez Svetlana Studio</h1>
@@ -38,11 +38,11 @@ export default function Home() {
               Spécialiste en extension des cils et architecture des sourcils à Ychoux.
             </p>
           </div>
-          <img 
-            src="/right-image.png" 
-            alt="Le processus de pose d'extension de cils : client et spécialiste" 
-            className={styles.welcomeImage} 
-            loading="lazy" 
+          <img
+            src="/right-image.png"
+            alt="Le processus de pose d'extension de cils : client et spécialiste"
+            className={styles.welcomeImage}
+            loading="lazy"
           />
         </section>
 
@@ -52,10 +52,38 @@ export default function Home() {
         <section className={styles.tarifsSection} id="tarifs">
           <h2 className={styles.tarifsTitle}>Nos Tarifs</h2>
           <ul className={styles.tarifsText}>
-            <li><span className={styles.bullet}>•</span> À partir de 35€ pour une séance complète d'extension de cils.</li>
-            <li><span className={styles.bullet}>•</span> Première séance à -10% !</li>
-            <li><span className={styles.bullet}>•</span> Dépose des cils gratuite.</li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Classique 1D –</em> Pose cil à cil pour un effet naturel et des cils allongés - <strong>35 €</strong>
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Effet volume “mouillé” –</em> Pour un look plus intense et captivant, avec des cils plux volumineux - <strong>40 €</strong>
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Remplissage 2 semaines –</em> <strong>20 €</strong>
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Remplissage 3 semaines –</em> <strong>30 €</strong>
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Dépose des cils –</em> Gratuite ✅
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Coloration des cils –</em> <strong>10 €</strong>
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Coloration et modélisation des sourcils –</em> <strong>15 €</strong>
+            </li>
           </ul>
+
+
+
         </section>
 
         {/* CTA Section */}
@@ -70,7 +98,7 @@ export default function Home() {
             Prendre rendez-vous
           </a>
         </div>
-        
+
         <Photos />
         <Contact />
       </main>
