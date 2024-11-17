@@ -10,13 +10,13 @@
   
   .title {
     font-size: 2.5rem;
-    color: #f07da5;
+    color: var(--highlight-color);
     margin-bottom: 1rem;
   }
   
   .message {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--foreground);
     margin-bottom: 2rem;
   }
   

@@ -1,7 +1,10 @@
 /* Définition des couleurs par défaut */
 :root {
   --background: #f5f3f3;
-  --foreground: #333;
+  --foreground: #000; 
+  --highlight-color: #d04f80;
+  --button-background: #f07da5;  /* Fond des boutons */
+  --button-background-hover: #e06a76;  /* Fond au survol des boutons */
 }
 
 /* Style global pour HTML et body */

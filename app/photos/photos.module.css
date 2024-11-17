@@ -6,7 +6,7 @@
   
   .sectionTitle {
     font-size: 2rem;
-    color: #f07da5;
+    color: var(--highlight-color);
     margin-bottom: 1rem;
   }
   

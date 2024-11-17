@@ -13,9 +13,11 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Svetlana Studio | Extension des cils à Ychoux, Biscarosse et Parentis",
-  description: "Sublimez votre regard avec nos services d'extension des cils et d'architecture des sourcils. Rendez-vous chez Svetlana Studio à Ychoux.",
+  title: "Extension de cils à Ychoux | Svetlana Studio - Salon de beauté à Parentis et Biscarrosse",
+  description: "Svetlana Studio vous propose des services d'extension des cils et d'architecture des sourcils à Ychoux, Parentis, et Biscarrosse. Sublimez votre regard dans notre salon de beauté.",
+  keywords: "extension de cils, Ychoux, Parentis, Biscarrosse, salon de beauté, architecture des sourcils, soins du visage, cils Ychoux",
 };
+
 
 export default function RootLayout({ children }) {
   return (
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="extension de cils, Ychoux, Parentis, Biscarrosse, salon de beauté, architecture des sourcils, soins du visage, cils Ychoux" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:url" content="https://svetlana-studio-5lvn.vercel.app" />
@@ -32,12 +35,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
 
         {/* JSON-LD: Beauty Salon */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `
           {
             "@context": "https://schema.org",
             "@type": "BeautySalon",
             "name": "Svetlana Studio",
-            "image": "https://svetlana-studio-5lvn.vercel.app/images/salon.jpg",
+            "image": "https://svetlana-studio-5lvn.vercel.app/right-image.png",
             "url": "https://svetlana-studio-5lvn.vercel.app",
             "telephone": "+33656675016",
             "address": {
@@ -47,8 +51,17 @@ export default function RootLayout({ children }) {
               "postalCode": "40160",
               "addressCountry": "FR"
             },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 44.3533,
+              "longitude": -1.0742
+            },
             "openingHours": "Mo-Fr 09:00-17:00",
             "priceRange": "10€-50€",
+            "serviceArea": {
+              "@type": "Place",
+              "name": "Ychoux, Parentis, Biscarrosse"
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.9",
@@ -84,7 +97,8 @@ export default function RootLayout({ children }) {
         ` }} />
 
         {/* JSON-LD: FAQ */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `
           {
             "@context": "https://schema.org",
             "@type": "FAQPage",

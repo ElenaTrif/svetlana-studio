@@ -8,13 +8,13 @@
 
 .contactTitle {
   font-size: 2rem;
-  color: #f07da5; /* Nouvelle couleur pour le titre */
+  color: var(--highlight-color); /* Nouvelle couleur pour le titre */
   margin-bottom: 10px;
 }
 
 .contactText {
   font-size: 1.2rem;
-  color: #333; /* Nouvelle couleur pour le texte */
+  color: var(--foreground); /* Nouvelle couleur pour le texte */
   margin-bottom: 30px;
 }
 
@@ -44,13 +44,13 @@
 
 .contactItem h3 {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--foreground);
   margin: 5px 0;
 }
 
 .contactItem p {
   font-size: 1rem;
-  color: #666;
+  color: #333;
 }
 
 .contactItem:hover {

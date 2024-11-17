@@ -20,12 +20,12 @@
 
 .title {
   font-size: 2.5rem;
-  color: #f07da5;
+  color: var(--highlight-color);
 }
 
 .texte {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--foreground);
 }
 
 .ctas {
@@ -44,12 +44,12 @@
 }
 
 .ctas .primary {
-  background-color: #f07d8f;
+  background-color: var(--button-background);
   color: #fff;
 }
 
 .ctas .primary:hover {
-  background-color: #e06a76;
+  background-color: var(--button-background-hover);
 }
 
 .welcomeSection {
@@ -138,13 +138,13 @@
 
 .tarifsTitle {
   font-size: 2rem;
-  color: #f07da5; /* Couleur principale de ton site */
+  color: var(--highlight-color); /* Couleur principale de ton site */
   margin-bottom: 1rem;
 }
 
 .tarifsText {
   font-size: 1.2rem;
-  color: #333;
+  background: var(--background);
   line-height: 1.6;
   padding-left: 0.1rem; 
   text-align: left;
@@ -156,7 +156,7 @@
 }
 
 .bullet {
-  color: #f07da5; /* Couleur des puces */
+  color: var(--button-background); /* Couleur des puces */
   font-size: 1.5rem; /* Taille des puces */
   margin-right: 1rem; /* Espacement entre la puce et le texte */
   font-weight: bold; /* Style des puces */
