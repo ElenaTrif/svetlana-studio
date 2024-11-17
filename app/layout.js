@@ -62,6 +62,10 @@ export default function RootLayout({ children }) {
               "@type": "Place",
               "name": "Ychoux, Parentis, Biscarrosse"
             },
+            "sameAs": [
+              "https://www.instagram.com/svetlana_studio40/?igsh=MTkwNzZqb3lzb283dg%3D%3D",
+              "https://www.facebook.com/profile.php?id=100074753333531"
+             ],
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.9",
