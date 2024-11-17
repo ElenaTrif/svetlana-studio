@@ -23,7 +23,7 @@ const Contact = () => {
           <i className="fas fa-map-marker-alt"></i>
           <div>
             <h3>Adresse</h3>
-            <p>Impasse des Résiniers, Ychoux, 40260</p>
+            <p>Impasse des Résiniers, Ychoux, 40160</p>
           </div>
         </div>
 
