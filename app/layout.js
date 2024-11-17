@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Extension de cils à Ychoux | Svetlana Studio - Salon de beauté à Parentis et Biscarrosse",
+  title: "Svetlana Studio | Extension des cils à Ychoux, Biscarosse et Parentis",
   description: "Svetlana Studio vous propose des services d'extension des cils et d'architecture des sourcils à Ychoux, Parentis, et Biscarrosse. Sublimez votre regard dans notre salon de beauté.",
   keywords: "extension de cils, Ychoux, Parentis, Biscarrosse, salon de beauté, architecture des sourcils, soins du visage, cils Ychoux",
 };
@@ -74,7 +74,10 @@ export default function RootLayout({ children }) {
             "review": [
               {
                 "@type": "Review",
-                "author": "Claire R.",
+                "author": {
+                  "@type": "Person",
+                  "name": "Claire"
+                },
                 "datePublished": "2024-11-12",
                 "reviewBody": "Service impeccable et résultat magnifique ! Merci Svetlana.",
                 "name": "Extension des cils",
@@ -86,7 +89,10 @@ export default function RootLayout({ children }) {
               },
               {
                 "@type": "Review",
-                "author": "Sophie L.",
+                "author": {
+                  "@type": "Person",
+                  "name": "Sophie L."
+                 },
                 "datePublished": "2024-10-28",
                 "reviewBody": "Les extensions de cils sont parfaites, je recommande vivement.",
                 "name": "Architecture des sourcils",
