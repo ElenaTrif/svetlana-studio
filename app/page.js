@@ -27,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.welcomeSection}>
           <img
-            src="/left-image.png"
+            src="/left-image.webp"
             alt="Les yeux avec des cils après l'extenstion"
             className={styles.welcomeImage}
             loading="lazy"
@@ -39,7 +39,7 @@ export default function Home() {
             </p>
           </div>
           <img
-            src="/right-image.png"
+            src="/right-image.webp"
             alt="Le processus de pose d'extension de cils : client et spécialiste"
             className={styles.welcomeImage}
             loading="lazy"
