@@ -54,19 +54,19 @@ export default function Home() {
           <ul className={styles.tarifsText}>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Classique 1D –</em> Pose cil à cil pour un effet naturel et des cils allongés - <strong>35 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Classique 1D –</em> Pose cil à cil pour un effet naturel et des cils allongés - <strong>40 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Effet volume “mouillé” –</em> Pour un look plus intense et captivant, avec des cils plux volumineux - <strong>40 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Effet volume “mouillé” –</em> Pour un look plus intense et captivant, avec des cils plux volumineux - <strong>45 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Remplissage 2 semaines –</em> <strong>20 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Remplissage 2 semaines –</em> <strong>25 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Remplissage 3 semaines –</em> <strong>30 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Remplissage 3 semaines –</em> <strong>35 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
@@ -74,11 +74,11 @@ export default function Home() {
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Coloration des cils –</em> <strong>10 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Coloration des cils –</em> <strong>15 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Coloration et modélisation des sourcils –</em> <strong>15 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Coloration et modélisation des sourcils –</em> <strong>20 €</strong>
             </li>
           </ul>
 
