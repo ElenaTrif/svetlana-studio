@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="extension de cils, Ychoux, Parentis, Biscarrosse, salon de beauté, architecture des sourcils, soins du visage, cils Ychoux" />
+        <meta name="google-site-verification" content="_stgwyf1riHUdc0kiHp5JOUL1qRTGiKt_SuanYdANfo" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:url" content="https://svetlana-studio-5lvn.vercel.app" />
