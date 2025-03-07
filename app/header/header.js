@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './header.module.css';
+import FacebookIcon from '../icons/facebook'; 
 
 const Header = () => {
   return (
@@ -31,7 +32,7 @@ const Header = () => {
           <a href="https://www.instagram.com/svetlana_studio40/?igsh=MTkwNzZqb3lzb283dg%3D%3D" target="_blank" rel="noopener noreferrer" className={styles.icon}>
             {/* Icône Instagram */}
             <Image 
-              src="/instagram.svg" 
+              src="/Instagram_icon.png" 
               alt="Instagram" 
               width={24} 
               height={24} 
@@ -39,12 +40,7 @@ const Header = () => {
           </a>
           <a href="https://www.facebook.com/profile.php?id=100074753333531" target="_blank" rel="noopener noreferrer" className={styles.icon}>
             {/* Icône Facebook */}
-            <Image 
-              src="/facebook.svg" 
-              alt="Facebook" 
-              width={24} 
-              height={24} 
-            />
+            <FacebookIcon />
           </a>
         </div>
       </div>

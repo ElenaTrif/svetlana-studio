@@ -38,7 +38,7 @@
 
 .ctas .primary {
   padding: 1rem 2rem;
-  border-radius: 5px;
+  border-radius: 25px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -49,7 +49,31 @@
 }
 
 .ctas .primary:hover {
-  background-color: var(--button-background-hover);
+  background-color: #f33ea1;
+}
+
+.ctas1 {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+.ctas1 .primary {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ctas1 .primary {
+  background-color: var(--button-background);
+  color: #fff;
+}
+
+.ctas1 .primary:hover {
+  background-color: #f33ea1;
 }
 
 .welcomeSection {

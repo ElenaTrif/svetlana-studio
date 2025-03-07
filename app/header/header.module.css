@@ -22,19 +22,33 @@
   .navLinks {
     display: flex;
     gap: 24px; /* Espacement entre les éléments du menu */
+    align-items: center;
   }
   
   .navLinks a {
     color: var(--foreground);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
   }
   
   /* Couleur de survol pour les éléments du menu */
   .navLinks a:hover {
-    color: #f07d8f; /* Couleur de survol similaire au bouton */
+    color: #d81b60; 
+    transform: scale(1.05);
+  }
+
+   /* Accent sur "Rendez-vous" */
+   .navLinks a[href*='appointment'] {
+    background-color: #fba4c1;
+    padding: 4px;
+    border-radius: 6px;
+  }
+  
+  .navLinks a[href*='appointment']:hover {
+    background-color: #f07da5;
+    color: var(--foreground);
   }
   
   /* Section des icônes des réseaux sociaux */
@@ -51,6 +65,16 @@
     height: 24px;
     transition: transform 0.3s;
   }
+
+   /* Changer les couleurs des icônes */
+   .icon img[src*='instagram'] {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(99%) saturate(747%) hue-rotate(295deg) brightness(89%) contrast(98%);
+  }
+
+  .icon img[src*='facebook'] {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(99%) saturate(2341%) hue-rotate(201deg) brightness(99%) contrast(91%);
+  }
+
   
   /* Survol des icônes */
   .icon:hover {

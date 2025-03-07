@@ -7,6 +7,8 @@ import Services from "./services/services";
 import Photos from "./photos/photos";
 import Contact from "./contact/contact";
 import styles from "./page.module.css";
+import Avis from "./avis/avis";
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,7 +48,22 @@ export default function Home() {
           />
         </section>
 
-        <Services />
+        {/* CTA Section */}
+        <div className={styles.ctas1} id="appointment">
+          <a
+            href="https://booking.setmore.com/scheduleappointment/735eb74d-0c35-4462-8d0e-e8ccec04489b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.primary}
+            aria-label="Prendre rendez-vous en ligne chez Svetlana Studio"
+          >
+            Prendre rendez-vous
+          </a>
+        </div>
+
+        <Avis />
+
+        <Photos />
 
         {/* Section Tarifs */}
         <section className={styles.tarifsSection} id="tarifs">
@@ -81,9 +98,6 @@ export default function Home() {
               <em style={{ textDecoration: 'underline' }}>Coloration et modélisation des sourcils –</em> <strong>20 €</strong>
             </li>
           </ul>
-
-
-
         </section>
 
         {/* CTA Section */}
@@ -95,11 +109,10 @@ export default function Home() {
             className={styles.primary}
             aria-label="Prendre rendez-vous en ligne chez Svetlana Studio"
           >
-            Prendre rendez-vous
+            Prenez RDV maintenant !
           </a>
         </div>
-
-        <Photos />
+        <Services />
         <Contact />
       </main>
       <Footer />

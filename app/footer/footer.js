@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './footer.module.css';
+import FacebookIcon from '../icons/facebook'; 
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
           className={styles.socialLink}
         >
           <Image
-            src="/instagram.svg"
+            src="/Instagram_icon.png"
             alt="Instagram"
             width={24}
             height={24}
@@ -28,13 +29,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className={styles.socialLink}
         >
-          <Image
-            src="/facebook.svg"
-            alt="Facebook"
-            width={24}
-            height={24}
-            className={styles.icon}
-          />
+         <FacebookIcon />
           Facebook
         </Link>
       </div>
