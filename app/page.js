@@ -48,6 +48,11 @@ export default function Home() {
           />
         </section>
 
+        {/* Texte défilant sous le bouton */}
+        <div className={styles.scrollingText}>
+          Réservation simple et rapide – Pas de paiement à l’avance
+        </div>
+
         {/* CTA Section */}
         <div className={styles.ctas1} id="appointment">
           <a

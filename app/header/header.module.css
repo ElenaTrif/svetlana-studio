@@ -101,3 +101,21 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .navLinks a[href*='appointment']::after {
+      content: "RDV"; /* Change le texte en RDV */
+      font-size: 12px;
+    }
+  
+    .navLinks a[href*='appointment'] {
+      background-color: #fba4c1;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0; /* Masque le texte d'origine */
+    }
+  
+    .navLinks a[href*='appointment']:hover {
+      background-color: #f07da5;
+    }
+  }
+  
