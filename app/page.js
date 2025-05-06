@@ -73,34 +73,47 @@ export default function Home() {
         {/* Section Tarifs */}
         <section className={styles.tarifsSection} id="tarifs">
           <h2 className={styles.tarifsTitle}>Nos Tarifs</h2>
+          <h3 className={styles.tarifsSubtitle}>Extension de cils</h3>
           <ul className={styles.tarifsText}>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Classique 1D –</em> Pose cil à cil pour un effet naturel et des cils allongés - <strong>40 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Classique 1D –</em> Pose cil à cil pour un effet naturel et des cils allongés <strong>– 40 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Effet volume “mouillé” –</em> Pour un look plus intense et captivant, avec des cils plux volumineux - <strong>45 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Effet volume “mouillé” </em>– Pour un look plus intense et captivant, avec des cils plux volumineux <strong>– 45 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Remplissage 2 semaines –</em> <strong>25 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Nouvelle pose mixte </em>  <strong>– 50 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Remplissage 3 semaines –</em> <strong>35 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Remplissage 2 semaines </em> <strong>– 25 €</strong> <em style={{ textDecoration: 'underline' }}>/ Mixte </em> <strong>– 30 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Dépose des cils –</em> Gratuite ✅
+              <em style={{ textDecoration: 'underline' }}>Remplissage 3 semaines </em> <strong>– 35 €</strong> <em style={{ textDecoration: 'underline' }}>/ Mixte </em> <strong>– 40 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Coloration des cils –</em> <strong>15 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Ajout de cils colorés </em> <em>– à partir de </em> <strong>5 €</strong>
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Coloration et modélisation des sourcils –</em> <strong>20 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Dépose gratuite</em> ✅ pour mes clientes
+            </li>
+            </ul>
+
+            <h3 className={styles.tarifsSubtitle}>Sourcils</h3>
+            <ul className={styles.tarifsText}>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Mise en forme + teinture (peinture) </em> <strong>– 15 €</strong>
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Mise en forme + teinture au henné </em> <strong>– 20 €</strong>
             </li>
           </ul>
         </section>
