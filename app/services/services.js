@@ -13,11 +13,6 @@ export default function Services() {
       description: "Sourcils parfaitement dessinés pour équilibrer votre visage.",
       icon: "/brows-icon.svg", // Chemin vers l'icône
     },
-    {
-      title: "Soins du visage",
-      description: "Des soins pour revitaliser et nourrir votre peau.",
-      icon: "/facial-icon.svg", // Chemin vers l'icône
-    },
   ];
 
   return (

@@ -71,52 +71,87 @@ export default function Home() {
         <Photos />
 
         {/* Section Tarifs */}
+
         <section className={styles.tarifsSection} id="tarifs">
           <h2 className={styles.tarifsTitle}>Nos Tarifs</h2>
-          <h3 className={styles.tarifsSubtitle}>Extension de cils</h3>
+
+          <h3 className={styles.tarifsSubtitle}>POSES COMPLÈTES</h3>
           <ul className={styles.tarifsText}>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Classique 1D –</em> Pose cil à cil pour un effet naturel et des cils allongés <strong>– 40 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Classique 1D</em> – <strong>45 €</strong> – 120 min
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Effet volume “mouillé” </em>– Pour un look plus intense et captivant, avec des cils plux volumineux <strong>– 45 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Pose mixte</em> – <strong>50 €</strong> – 120 min
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Nouvelle pose mixte </em>  <strong>– 50 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Effet mouillé</em> – <strong>50 €</strong> – 120 min
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Remplissage 2 semaines </em> <strong>– 25 €</strong> <em style={{ textDecoration: 'underline' }}>/ Mixte </em> <strong>– 30 €</strong>
+              <em style={{ textDecoration: 'underline' }}>Volume russe (3D à 5D)</em> – <strong>60 €</strong> – 120 min
             </li>
-            <li>
-              <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Remplissage 3 semaines </em> <strong>– 35 €</strong> <em style={{ textDecoration: 'underline' }}>/ Mixte </em> <strong>– 40 €</strong>
-            </li>
-            <li>
-              <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Ajout de cils colorés </em> <em>– à partir de </em> <strong>5 €</strong>
-            </li>
-            <li>
-              <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Dépose gratuite</em> ✅ pour mes clientes
-            </li>
-            </ul>
+          </ul>
 
-            <h3 className={styles.tarifsSubtitle}>Sourcils</h3>
-            <ul className={styles.tarifsText}>
+          <h3 className={styles.tarifsSubtitle}>REMPLISSAGES CLASSIQUE</h3>
+          <ul className={styles.tarifsText}>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Mise en forme + teinture (peinture) </em> <strong>– 15 €</strong>
+              <em style={{ textDecoration: 'underline' }}>2 semaines</em> – <strong>25 €</strong> – 60 min
             </li>
             <li>
               <span className={styles.bullet}>•</span>
-              <em style={{ textDecoration: 'underline' }}>Mise en forme + teinture au henné </em> <strong>– 20 €</strong>
+              <em style={{ textDecoration: 'underline' }}>3 semaines</em> – <strong>35 €</strong> – 90 min
+            </li>
+          </ul>
+
+          <h3 className={styles.tarifsSubtitle}>REMPLISSAGES MIXTE</h3>
+          <ul className={styles.tarifsText}>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>2 semaines</em> – <strong>30 €</strong> – 90 min
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>3 semaines</em> – <strong>40 €</strong> – 90 min
+            </li>
+          </ul>
+
+          <h3 className={styles.tarifsSubtitle}>REMPLISSAGES VOLUME RUSSE</h3>
+          <ul className={styles.tarifsText}>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>2 semaines</em> – <strong>35 €</strong> – 90 min
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>3 semaines</em> – <strong>45 €</strong> – 120 min
+            </li>
+          </ul>
+
+          <h3 className={styles.tarifsSubtitle}>SOURCILS</h3>
+          <ul className={styles.tarifsText}>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Mise en forme + teinture au henné</em> – <strong>30 €</strong> – 60 min
+            </li>
+          </ul>
+
+          <h3 className={styles.tarifsSubtitle}>AUTRES PRESTATIONS</h3>
+          <ul className={styles.tarifsText}>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Dépose des extensions de cils</em> – <strong>10 €</strong> – 30 min
+            </li>
+            <li>
+              <span className={styles.bullet}>•</span>
+              <em style={{ textDecoration: 'underline' }}>Ajout de cils colorés ou de strass</em> – <strong>10 €</strong> – 20 min
             </li>
           </ul>
         </section>
+
 
         {/* CTA Section */}
         <div className={styles.ctas} id="appointment">
@@ -130,7 +165,7 @@ export default function Home() {
             Prenez RDV maintenant !
           </a>
         </div>
-        <Services />
+        <Services />0
         <Contact />
       </main>
       <Footer />

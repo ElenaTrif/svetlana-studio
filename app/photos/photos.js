@@ -15,7 +15,6 @@ export default function Photos() {
     "/photo10.webp",
     "/photo11.webp",
     "/photo12.webp",
-    "/photo13.webp",
     "/photo14.webp",
     "/photo15.webp",
     "/photo16.webp",

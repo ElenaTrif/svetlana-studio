@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Configuration du projet
+
+Ce projet utilise :
+
+- Node.js v18.x
+- npm v10.x
+- Next.js 13
+- React 18
+
+Pour activer automatiquement la bonne version de Node avec nvm :
+
+cd svetlana-studio
+nvm use 18
