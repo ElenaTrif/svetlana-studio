@@ -165,7 +165,7 @@ export default function Home() {
             Prenez RDV maintenant !
           </a>
         </div>
-        <Services />0
+        <Services />
         <Contact />
       </main>
       <Footer />
